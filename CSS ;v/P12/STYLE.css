@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dedede;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+h3 {
+    margin-bottom: 20px;
+    border: 1px solid #aaaaaa;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    color: #777777;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 20px auto;
+    background-color: white;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.header {
+    border: 1px solid #dedede;
+    padding: 10px;
+    background: #9e9afb;
+}
+
+/*main*/
+
+.left {
+    width: 250px;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+
+.left ul {
+    list-style-type: none;
+}
+
+.left ul li {
+    display: block;
+}
+
+.left ul li a {
+    display: block;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    color: #333333;
+}
+
+.left ul li a:hover{
+    color: #461af3;
+
+}
+
+.middle {
+    width: 500px;
+    border : 1px solid #dedede;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+}
+
+.middle img {
+    max-width: 100%;
+    height: auto;
+}
+
+.middle a{
+    font-weight: bold;
+
+}
+
+.right {
+    max-width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #dedede;
+    float: left;
+}
+
+.right ul {
+    list-style-type: none;
+
+}
+
+.right ul li {
+    display: block;
+}
+
+.right ul li a {
+    display: block;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    color: #333333;
+}
+
+.right ul li a:hover {
+    color: #461af3;
+}
+
+.footer {
+    clear: both;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin: 15px;
+    background-color: #9e9afb;
+}
+
+/*Media Queries*/
+/*For Resolution below 1080p*/
+@media screen and (max-width : 1080px) {
+    .container {
+        width: 100%;
+    }
+
+    .left {
+        width: 25%;
+        background: #d6ccfe;
+    }
+
+    .middle {
+        width: 68%;
+        float: right;
+    }
+    
+    .right {
+        clear: both;
+        padding: 1% 4% ;
+        width: auto;
+        float: none;
+        background: #d6ccfe;
+    }
+}
+
+/*For Resolution below 959p*/
+@media screen and (max-width : 959px) {
+    .container {
+        width: 100%;
+    }
+
+    .left {
+        width: 70%;
+    }
+
+    .right {
+        width: 30%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+/*For Resolution below 780p*/
+
+@media screen and (max-width : 780px) {
+    .header,
+    .footer {
+        text-align: center;
+    }
+
+    .left,
+    .middle,
+    .footer {
+        width: auto;
+        float: none;
+    }
+}

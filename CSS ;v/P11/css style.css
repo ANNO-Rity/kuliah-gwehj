@@ -1,0 +1,52 @@
+/* PSeudo class */
+
+.hello:link {
+    color : #053f2e;
+    background-color: #57ddb5;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: serpentine;
+    font-style: italic;
+}
+
+.hello:hover {
+    font-size: 25;
+    font-family: padaloma;
+    color: #10fde9;
+    background-color: #0a0877;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.hello:active{
+    font-style: italic;
+
+}
+
+.hello.visited {
+    color: red;
+}
+
+li:first-child a {
+    color: green;
+}
+
+li:last-child a{
+    color: green;
+}
+
+li:nth-child(even){ /*li dengan anka genap*/
+    color: #053f2e;
+}
+
+li:nth-child(odd) { /*li dengan anka ganjil*/
+    color: violet;
+}
+
+p:first-of-type {
+    color:red;
+}   
+
+p:last-of-type {
+    color: orangered;
+}
